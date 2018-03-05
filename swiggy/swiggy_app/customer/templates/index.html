@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+   <form action="/create/" method="POST">
+      {%csrf_token%}
+   	  Name:<input type="text" name="name"><br>
+   	  Desciption:<textarea name="description"></textarea><br>
+   	  Enabled:<input type="enabled" name="enabled" value="true"><br>
+   	  Price:<input type="price" name="price" value="price"><br>
+   	  <input type="submit" name="Submit">
+
+  
+   </form>
+</body>
+</html>

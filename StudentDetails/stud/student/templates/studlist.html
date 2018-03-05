@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><h1 align="center"><u>Student Database:</u></h1></head>
+	<title></title>
+<center><body>
+    <table border=2 cellpadding="20">
+    	<tr>
+    		<th>Name</th>
+    		<th>Rollno</th>
+    		<th>Class</th>
+    		<th>Gender</th>
+            <th>Address</th>
+    	</tr>
+
+    	{% for p in stud %}
+    	<tr>
+    	    <td>
+    	    {{p.name}}
+    	    </td>
+    	    <td>
+    	    {{p.rollno}}</td>
+    	    <td>
+    	    {{p.Class}}
+    	    </td>
+    	    <td>
+    	    {{p.gender}}
+    	    </td>
+            <td>
+            {{p.address}}
+            </td>
+    	</tr>
+        {% endfor %}
+
+    </table>
+</body></center>
+</html>

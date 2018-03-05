@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><h1 align="center"><u>Student Details</u></h1></head>
+<title></title>
+
+<center><body>
+	<form action="/add/" method="POST">
+		{%csrf_token%}
+		Name:<input type="text" name="name"><p>
+		Rollno:<input type="text" name="rollno"><p>
+		Class:<input type="text" name="Class"><p>
+	    Gender:<input type="radio" name="gender">Male
+		<input type="radio" name="gender">Female
+		<input type="radio" name="gender">Other<p>
+		Address:<textarea name="address"></textarea><p>
+		<input type="submit" value="Submit">
+
+	</form>
+
+</body></center>
+</html>
